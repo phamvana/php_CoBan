@@ -3,7 +3,7 @@ require('bootstrap/header.php');
 require_once "PDO/connect.php";
 $qr = "SELECT * FROM users";
 $query = $handler->query($qr);
-
+$query->setFetchMode(PDO::FETCH_CLASS,'getUserEmail');
 // while($r=$query->fetch())
 // {
 //     //Xuất kết quả từ bảng users
@@ -28,8 +28,9 @@ $query = $handler->query($qr);
 // $r = $query->fetch(PDO::FETCH_OBJ);
 // echo '<pre>', print_r($r), '</pre>';
 echo "<hr />";
-while($r = $query->fetch(PDO::FETCH_OBJ)){
-    echo $r->email, "<br />";
+while($r = $query->fetch()){
+    // echo '<pre>', print_r($r), '</pre>',"<br />";
+    echo '<pre>', $r->nameEmail, '</pre>',"<br />";
 }
 echo "<hr />";
 require('bootstrap/footer.php');

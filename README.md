@@ -4,5 +4,6 @@
 
 
 ## PDO
+https://www.youtube.com/playlist?list=PLfdtiltiRHWHkDwEoZ29Q9FKtWVjA46HC
 1. Connect
 2. Use
