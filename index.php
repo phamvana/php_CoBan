@@ -1,8 +1,20 @@
-<?php  phpinfo(); ?>
 <?php 
     require('bootstrap/header.php');
-    require('var/var_global25.php');
-    require('var/var_global26.php');
-    phpinfo();
+
+
+
+    require_once "PDO/connect.php";
+    $qr = "SELECT * FROM users";
+    $query = $handler->query($qr);
+    
+    // while($r=$query->fetch())
+    // {
+    //     //Xuất kết quả từ bảng users
+    //     echo $r['name'], "<br />"; 
+    // }
+    $r=$query->fetch();
+    echo '<pre>', print_r($r), '</pre>';
+
     require('bootstrap/footer.php');
+
 ?>

@@ -14,3 +14,4 @@
     <div class="container bg-primary mt-8">
         <h2>Học PHP cơ bản</h2>
     </div>
+    <div class="container"> 
