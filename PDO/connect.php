@@ -4,7 +4,7 @@
 
 
 try {
-    $handler = new PDO('mysql:host=localhost; dbname=laravel', 'root', '');
+    $handler = new PDO('mysql:host=localhost; dbname=mvc-project', 'root', '');
     $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo $e->getMessage() . "<br/>";

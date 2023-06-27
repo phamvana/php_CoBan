@@ -1,7 +1,7 @@
 <?php
 require('bootstrap/header.php');
 require_once "PDO/connect.php";
-$qr = "SELECT * FROM users";
+$qr = "SELECT * FROM student";
 $query = $handler->query($qr);
 $query->setFetchMode(PDO::FETCH_CLASS,'getUserEmail');
 // while($r=$query->fetch())
