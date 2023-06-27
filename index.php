@@ -30,7 +30,7 @@ $query->setFetchMode(PDO::FETCH_CLASS,'getUserEmail');
 echo "<hr />";
 while($r = $query->fetch()){
     // echo '<pre>', print_r($r), '</pre>',"<br />";
-    echo '<pre>', $r->nameEmail, '</pre>',"<br />";
+    echo '<p>', $r->nameEmail, '</p>';
 }
 echo "<hr />";
 require('bootstrap/footer.php');
